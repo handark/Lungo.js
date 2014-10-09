@@ -1,59 +1,57 @@
 LungoJS
 =======
-A HTML5 framework for developers who want to design, build and share cross device applications.
+LungoJS es un framework HTML5 pensado en los desarrolladores a los que también les gusta el diseño, desarrollado para que crear aplicaciones compatibles con todos los dispositivos.
 
- * **HTML5 Optimized Apps**: Supports open web standards, such as HTML5, CSS3 and JavaScript. It brings a consistent browser environment across mobiles, TVs and desktop devices.
+ * **Apps HTML5 optimizadas**: Soporta los open web standards como HMTL5, CSS3 y JavaScript. Proporciona un entorno consistente basado en navegador para cualquier dispositivo movil, TVs y aplicaciones de escritorio.
 
- * **Open Source Project**: Each new line of code in Lungo is welcome, we hope that Developers and restless minds will help us to improve day by day this humble project.
+ * **Proyecto Open Source**: Cada nueva linea de código en Lungo es bienvenida, esperamos que cualquier desarrollador con mente intrépida nos ayude a mejorar día a día Lungo.
 
- * **Powerful JavaScript API**: here are many ways to develop apps, not all of them are optimized. Lungo offers you a robust API so you can have complete control of everything that happens in your App.
+ * **Una poderos API JavaScript**: Existen muchas maneras de desarrollar un app pero no todas ellas de manera optimizada. Lungo te ofrece una API robusta con la que puedes tener completo control de todo lo que suceda en tu App.
 
- * **Cross-Device full support**: It's known that creating apps for each platform is expensive, this situation is increased by the arrival of tablets and SmartTVs. Lungo will suit all of them creating a unique and amazing UX.
+ * **Soporte multiplataforma**: Es sabido que desarrollar apps para cada plataforma tiene un coste alto y mas aún si se tienen en cuenta el desarrollo para tablets y SmartTVs. Lungo se ajusta a todos ellos crean una interfaz de usuario única para todos ellos.
 
 *Current version: [2.2.0]()*
 
 
 
-Getting Started
----------------
-The idea of Lungo arose in year 2010 when the craftman Javi Jiménez Villar ([**soyjavi**](https://twitter.com/soyjavi)) saw that hot existing Mobile Frameworks at that time were not powerful and not using the features of HTML5.
+Empieza a usarlo
+----------------
+La idea de Lungo surgió en el año 2010 cuando Javi Jiménez Villar ([**soyjavi**](https://twitter.com/soyjavi)) se dio cuenta de que los frameworks existentes en aquella época no eran muy versátiles y no hacían uso de las principales funcionalidades de HMTL5.
 
-### Community
-If this documentation is not enough for you, you can subscribe to the Lungo open community to share your experiences and knowledge. You can do it in [English](https://groups.google.com/forum/#!forum/lungojs) or [Spanish](https://groups.google.com/forum/#!forum/lungojs_es), you decide.
+### Comunidad
+Si esta documentación se te queda corta siempre te puedes suscribir a la comunidad de Lungo para compartir experiencias y conocimientos. En [Inglés](https://groups.google.com/forum/#!forum/lungojs) o [Castellano](https://groups.google.com/forum/#!forum/lungojs_es), tu decides.
+
 
 ### GitHub
-This is opensource, so feel free to fork this project to help us create a better framework. All source code is developed with CoffeeScript and Stylus, but don't worry we worship clean-code so you can quickly get to make your own modifications in it.
+Este es un proyecto opensource, asi que sientete libre de hacer un fork del proyecto para ayudarnos a mejorar Lungo. Todo el código fuente está escrito en CoffeScript y Stylus, como es código limpio podrás modificarlo de manera sencilla y realizar tus aportes.
 
 [https://github.com/tapquo/lungo.js](https://github.com/tapquo/lungo.js)
 
-### Licensing
-Lungo is licensed under GPLv3 licensed and a Commercial License for OEM uses. See [LICENSE](https://github.com/tapquo/Lungo.js/blob/master/LICENSE.md) for more information.
+### Licencia
+Lungo esta bajo una licencia GPLv3 para mas información [LICENSE](https://github.com/tapquo/Lungo.js/blob/master/LICENSE.md).
 
-### Help us on being better
-Please, don't have any doubt in contacting us if you think you can do a better API. If you think that we have to support a new feature or if you have found a bug, use [GitHub issues](https://github.com/tapquo/lungo.js/issues). Make a fork of this documentation and send us your *pull requests* with your improvements. 
+### Ayudanos a mejorar
+Por favor no tengas ninguna duda en contactarnos si crees que puedes realizar mejoras sobre la API. Si piensas que deberíamos dar soporte a alguna nueva funcionalidad o si encuentras un bug, utiliza GitHub issues](https://github.com/tapquo/lungo.js/issues). Sientete libre de mejorar esta documentación y mandanos tus *pull requests* con tus mejoras.
 
-To talk with us or with other developers about the Lungo API, suscribe to our [**mailing list**](https://groups.google.com/forum/#!forum/lungojs).
+Para contactar con nosotros o con otros desarrolladores acerca de la API de Lungo suscribete a nuestra [**lista de correo**](https://groups.google.com/forum/#!forum/lungojs).
+
+Fácil de Prototipar
+===================
+El objetivo es crear una estructura semántica en todo el proyecto, desde el lenguaje de marcado HTML, pasando por las clases CSS bien organizadas y acabando con la API JavaScript. Lungo ofrece una gran sencillez a la hora de hacer un prototipo rápido de tu aplicación, no te será necesario escribir ninguna línea de JavaScript para visualizar como debería comportarse tu aplicación. En esta documentación aprenderemos cuales son los elementos semánticos que utiliza Lungo y como se puede crear una aplicación unicamente con HTML. Así que no le demos mas vueltas y comencemos!
+
+Estructura
+----------
+Estas son las dependencias de tu aplicación Lungo, como mínimo deberia contener las siguientes:
+
+	html
+	<link rel="stylesheet" href="components/lungo.brownie/lungo.css">
+	<link rel="stylesheet" href="components/lungo.icon/lungo.icon.css">
+	<link rel="stylesheet" href="components/lungo.brownie/lungo.theme.css">
+	<script src="components/quojs/quo.js"></script>
+	<script src="components/lungo/lungo.js"></script>
 
 
-
-EASY PROTOTYPE
-==============
-The main premise is to create a semantic structure in the whole project, starting from the markup language HTML, through a well organized CSS and ending with the JavaScript API. Lungo offers a great facility when prototyping applications, and will not be needed to enter any lines of code (JavaScript) to visualize how our application will behave. In this doc we will learn which are Lungo semantic elements as relate to each and how you can create applications with HTML only. It's really exciting! let's begin.
-
-
-Structure
----------
-Here you have the dependencies of your Lungo application's body. It must contain at least:
-
-``` html
-<link rel="stylesheet" href="components/lungo.brownie/lungo.css">
-<link rel="stylesheet" href="components/lungo.icon/lungo.icon.css">
-<link rel="stylesheet" href="components/lungo.brownie/lungo.theme.css">
-<script src="components/quojs/quo.js"></script>
-<script src="components/lungo/lungo.js"></script>
-```
-
-`<section>` it's the main container of your UI Components in your App and `<article>` it must be placed inside your section and must have…. Each section and article must contain an unique ID. 
+`<section>` es el contenedor principal de la interfaz de usuario en tu app y `<article>` se debe colocar dentro de tu section,cada section y article deberían tener un ID único.
 ``` html
 <section id="main">
     <article id="main-article">
@@ -62,23 +60,23 @@ Here you have the dependencies of your Lungo application's body. It must contain
 </section>
 ```
 
-The JavaScript function that initializes Lungo it's:
+<strong>Recuerda:</strong>La función JavaScript para inicializar el entorno de Lungo:
 ``` javascript
 Lungo.init({});
 ```
 
-#### Load Sync resources on init
-To make easier to create and modify your app you can create the sections in separate html files and load the synchonously, making your main file smaller and having your code organized better.
+#### Carga de los recursos síncronos al inicializar Lungo
+Para que te sea mas sencillo crear y modificar tu app puedes crear las secciones en ficheros htmls separados y cargarlos de manerá síncrona, dejando tu fichero html principal mucho mas limpio y organizando mejor tu código.
 ``` javascript
-//Load resource on app init
+//Cargar recurso al inicio
 Lungo.init({
     name: 'example',
     resources: ['section_to_load.html']
 });
 ```
 
-#### Load async resources by link
-There is other way to load resources asynchronously, just add to the `<a>` tag element the attribute data-async with the link to the section.
+#### Carga de los recursos asíncronos mediante enlance
+Solo existe una manera de cargar los recursos de manera asíncrona, simplemente añade a la etiqueta `<a>` el atributo data-async con el enlace a tu sección.
 ``` html
 <section id="loader" data-transition="">
     <article id="art1" class="active">
@@ -90,12 +88,12 @@ There is other way to load resources asynchronously, just add to the `<a>` tag e
 ```
 
 
-Basic Elements
---------------
-Lungo uses the semantic language markup introduced with HTML5, so you can add this elements using the new semantic tags.
+Elementos básicos
+-----------------
+Lungo utiliza el lenguaje semántico introducido en HMTL5, así que puedes añadir estos elementos utilizando las etiquetas semánticas.
 
-### Section & Article
-A `<section>` is a view of our application where content will be displayed and where there may be subelements as `<header>`, `<footer>` and `<article>`.
+### Section y Article
+Una `<section>` es una vista donde se desplegará el contenido y existen muchos subelementos como `<header>`, `<footer>` y `<article>`.
 ``` html
 <section id="main">
     <article id="main-article" class="active">
@@ -103,8 +101,7 @@ A `<section>` is a view of our application where content will be displayed and w
     </article>
 </section>
 ```
-
-The content a particular `<section>` is structured by `<article>`. Within a section may be as many `<article>` as you like. The article of the section that will be shown first must have th `class="active"` attribute set.
+El contenido de una `<section>` en particular esta estructurado por los `<article>`. Una `<section>` puede contener tantos `<article>` como quieras. El artículo que tiene preferencia para visualizarse es el que tenga la `class="active" como atributo.
 
 ``` html
 <section id="main_section">
@@ -117,7 +114,8 @@ The content a particular `<section>` is structured by `<article>`. Within a sect
 
 
 ### Header
-Each `<section>` can contain a `<header>` where the tittle of the section will be shown. Optionally you can add navigation buttons, to go to another section, go back to a previous one, go to another article or just open the aside menu.
+Cada `<section>` puede contener un `<header>` donde se visualizará el título de la sección en donde estés. También puedes añadirle si quieres botones para la navegación, que te muevan de una sección a otra, vuelvan a la sección anterior, cambien de artículo o simplemente abran el menu aside.
+
 ``` html
 <section id="main_section">
     <header data-title="example"></header>
@@ -129,7 +127,8 @@ Each `<section>` can contain a `<header>` where the tittle of the section will b
 
 
 ### Footer
-Each `<section>` can contain a `<footer>`. There you can add buttons to navigate through articles, sections and even asides.
+De la misma manera cada `<section>` puede contener un `<footer>` y añadirle botones para navegar entre artículos, secciones o incluso menus laterales (aside).
+
 ``` html
 <section id="main_section">
     <article id="main" class="active">
@@ -148,7 +147,8 @@ Each `<section>` can contain a `<footer>`. There you can add buttons to navigate
 
 
 ### Aside
-The `<aside>` element gives us a lateral area which will appear depending on the device (tablet) or hidden (mobile). Its structure is very similar to the section one's. We can create a link that references a `<aside>` with a particular id using the navigation system of Lungo. We will use the attribute data-router (which will be discussed in subsequent chapters). We can also define the positioning of it, using style classes. The default position is left.
+El elemento `<aside>` nos proporciona una area que se despliega de los laterales que podrá desplegarse o no en función del dispositivo en el que estemos. Por ejemplo un menu lateral que por defecto este oculto en móviles pero visible en tablets. La estructura es muy similar a la sección. Podemos crear un enlace que referencie un `<aside>` con una id en particular utilizando el sistea de navegación de Lungo. Utilizaremos el atributo data-router (El cual veremos mas adelante). También podemos definirle la posición utilizando estilos mediante las clases. Por defecto el aside estará a la izquierda de la pantalla.
+
 ``` html
 <aside id="features">
     <header data-title="Options"></header>
@@ -157,8 +157,7 @@ The `<aside>` element gives us a lateral area which will appear depending on the
     </article>
 </aside>
 ```
-
-In your section if you want view aside automaticaly in Tablet-Apps you need link your aside with `data-aside` attribute, and you can display/hide with attribute `data-view-aside`:
+En tu sección si quieres que se visualice el aside automáticamente necesitas enlazar tu aside con el atributo `data-aside`, y puedes mostrarlo u ocultarlo con el atributo `data-view-aside`.
 ``` html
 <section id="main_section" data-aside="features">
     <header data-title="Aside">
@@ -172,12 +171,13 @@ In your section if you want view aside automaticaly in Tablet-Apps you need link
 </section>
 ```
 
-Navigation
+Navigación
 ----------
-The navigation in Lungo is entirely semantic, and you will use the element `<a>` or `<button>` and his data attribute "view-*" to tell the system which `<section>`, `<article>` or `<aside>` you want to go to.
+La navegación de Lungo se realiza de una manera semántica, se utiliza el elemento `<a>` o `<button>` y el atributo "view-*" para indicarle a Lungo a que `<section>`, `<article>` o `<aside>` quieres ir.
 
-### Data-View attribute
-The `data-view-*` attribute is set in the `<a>` or `<button>` element to set the type of element we are going to navigate to (`<section>`, `<article>` or `<aside>`) and in the href attribute the hashbang plus the id of the element has to be set. Lungo uses this `href` to generate the bread crumbs.
+### Atributo Data-View
+El atributo `data-view-*` se coloca en  los `<a>` o `<button>` para indicar a que tipo de elemento queremos navegar (`<section>`, `<article>` o `<aside>`) o si usamos el atributo href se debe usar un hashbang(#) mas el id del elemento destino. Lungo utiliza el href para ir dejando trazada la navegación de tu aplicación como si de una miga de pan se tratase.
+
 ``` html
 <section id="main">
     <article id="article_1" class="active">
@@ -189,8 +189,9 @@ The `data-view-*` attribute is set in the `<a>` or `<button>` element to set the
 </section>
 ```
 
-### Data-back attribute
-As it has been said before, Lungo's navigation is based on the bread crumbs pattern, so navigation backwards between sections is done using the data-back functionality. You can set a button in your header using the data-back attribute or use in `<a>` or `button` tags data-router="section" with href="#back"
+### Atributo Data-back
+Como se ha mencionado anteriormente la Navegación de Lungo funciona como si se tratase de un rastro de migas de pan, por lo que la navegación hacia atrás entre secciones se realiza de manera sencilla utilizando data-back. Puedes poner un botón en tu header con data-back o utilizar en `<a>` o `<button>` un data-router="section" enlazandolo hacia detrás con href="#back".
+
 ``` html
 <section id="main">
 	<article id="main_1" class="active">{{CONTENT}}</article>
@@ -206,7 +207,7 @@ As it has been said before, Lungo's navigation is based on the bread crumbs patt
 ```
 
 ### Nav
-To create simple structures of navigation buttons within a footer or header the nav element has to be used. In the header, the nav element's position will depend on the class applied to it. `left` to the left and `right` to the right.
+Para crear estructuras de navegación con botones ya sea en un header o en un footer se ha de usar el elemento nav. En el header la posición del elemento nav dependera de la clase que se le aplique. `left` para la izquierda y `right` para la derecha.
 
 ``` html
 <section id="main">
@@ -238,7 +239,7 @@ To create simple structures of navigation buttons within a footer or header the 
 ```
 
 ### Groupbar
-Lungo gives you the capability to have a special menu at the top of your UI. To do this you have to extend the header element using class="extended" and create inside of it a nav element with class="groupbar"
+Lungo te da la capacidad de tener un menu especial en la parte superior de un interfaz. Para ello tienes que extender el elemento header utilizando class="extended" y crear dentro de el un elemento de navegacion nav con class="groupbar".
 
 ``` html
 <section id="main">
@@ -255,7 +256,9 @@ Lungo gives you the capability to have a special menu at the top of your UI. To 
 ```
 
 ### Menu
-Besides `<nav>` elements `and` *groupbar* there is another way to make the user select new view in your application. Since Brownie (v2.2) implements *menu* Control and it is called with the attribute `data-view-menu`:
+Además de los elementos `<nav>` `y` *groupbar* existe otra manera de que el usuario seleccione una nueva vista de tu aplicación. Desde la version 2.2 Brownie está disponible el control de *menu* y se utiliza poniendo el atributo 
+`data-view-menu`:
+
 ```html
 <section id="menu" data-transition="slide">
     <header data-title="data-control=menu">
@@ -274,18 +277,18 @@ Besides `<nav>` elements `and` *groupbar* there is another way to make the user 
 	</nav>
 </section>
 ```
+En el caso de que quieras dar prioridad a los iconos simplemente tienes que aplicar la clase `icons`:
 
-In case you want to give it a priority to icons only have to apply the `icons` class.
 ```html
 <nav id="options-icons" data-control="menu" class="icons">
     …
 </nav>
 ```
 
-Bindings
---------
-#### Title Binding
-To update the title of a section through the navigation, just use the attribute `data-title` in your navigation element.
+Bindings (Vínculos)
+-------------------
+#### Títulos vinculados
+Para que se actualice automáticamente el título de una sección mediante la navegación tan solo hay que usar el atributo `data-title` en tu elemento de navegación
 ``` html
 <section id="main">
     <header data-title="Default title"></header>
@@ -298,8 +301,9 @@ To update the title of a section through the navigation, just use the attribute 
 </section>
 ```
 
-#### Element binding
-You can show nav elements when a particular article is visible with data-article attribute.
+#### Elementos vinculados
+Puedes mostrar elementos nav cuando un artículo en particular sea visible con el atributo data-article:
+
 ``` html
 <section id="main">
     <header data-title="Title of section">
@@ -313,13 +317,13 @@ You can show nav elements when a particular article is visible with data-article
 </section>
 ```
 
-* [Elements](https://github.com/tapquo/Lungo.js/blob/master/docs/EN/prototype/elements.md)
-* [Navigation](https://github.com/tapquo/Lungo.js/blob/master/docs/EN/prototype/navigation.md)
+* [Elementos](https://github.com/tapquo/Lungo.js/blob/master/docs/EN/prototype/elements.md)
+* [Navegación](https://github.com/tapquo/Lungo.js/blob/master/docs/EN/prototype/navigation.md)
 
 
-Forms
------
-We know that forms have always been somewhat tedious to handle in web projects, Lungo makes easy create a uniform base and unique experience among all browsers. All controls from the `input` (in any of its variants) to the `button` are perfectly adapted for use with touch devices. You only have to use the `form` or class `form`:
+Formularios
+-----------
+Los formularios siempre han sido algo tedioso de manejar en los proyectos web, Lungo te ayuda a crear una base para los formularios que sea uniforme y que proporcione una experiencia de usuario similar en los distintos navegadores. Todos los controles desde los `input` (todas sus variantes) a los `button` están perfectamente adaptados para ser usados con dispositivos táctiles. Tan solo tienes que usar el elemento `form` o la clase `form`:
 ``` html
 <div class="form">
 	<fieldset>
@@ -344,9 +348,10 @@ We know that forms have always been somewhat tedious to handle in web projects, 
 ```
 
 
-Lists
------
-Can you imagine an App without lists? we can't conceive of such a thing, so in Lungo offers you an multiple components to make lists tailored to your needs. Always keeping in mind that everything starts with a `<ul>` and continous with a `<li>`:
+Listas
+------
+¿Es posible imaginar una app que no tenga listas? Nosotros no podemos imaginar tal cosa, por lo que Lungo ofrece gran variedad de componentes para crear listas que se ajusten a tus gustos y necesidades. Siempre teniendo en cuenta que todo empieza con un elemento `<ul>` seguido por un elemento `<li>`:
+
 ``` html
 <article id="example" class="list">
    <ul>
@@ -358,8 +363,8 @@ Can you imagine an App without lists? we can't conceive of such a thing, so in L
    </ul>
 </article>
 ```
+Nuestro elemento `<li>` puede ser construido de varias maneras, y hacerlo todo lo complejo que necesites, aquí tienes un ejemplo de un listado mas completo:
 
-Our `<li>` element can be filled by multiple ways and how complex it all you want, check out a list item much more complete:
 ``` html
 <li class="thumb big">
     <img src="http://cdn.tapquo.com/lungo/icon-144.png" />
@@ -373,27 +378,24 @@ Our `<li>` element can be filled by multiple ways and how complex it all you wan
     </div>
 </li>
 ```
+Si quieres ver mas ejemplos de todos los posibles estilos que aplicar a una lista visita nuestra app de ejemplo *Kitchen-Sink*
 
-If you want to know more about the possible styles of the lists have to study the examples in our wonderful *Kitchen-Sink*.
-
-
-
-JavaScript API
+API JavaScript
 ==============
 
-Core
-----
-Lungo has several methods that are used inside its engine. Here you have them if you need to include some of their functionality in your application.
+Core (núcleo)
+-------------
+Lungo dispone de varios métodos que se usan internamente en su motor. Aquí los teneís por si deseís incluir parte de su funcionalidad en vuestra aplicación.
 
 #### log()
-Console system to display messages when you are in debug mode.
-**Parameters**
+Sistema de consola para desplegar mensajes cuando estas debuggeando.
+**Parameters** (Parámetros)
 ```
 number:     Severity based in (1)Log, (2)Warn, (>2)Error
 string:     Message to show in the console
 ```
 
-*Example*
+*Ejemplo*
 ``` javascipt
 Lungo.Core.log(1, "Launched event");
 Lungo.Core.log(2, "Warning!!");
@@ -402,13 +404,13 @@ Lungo.Core.log(3, "Error!!!!");
 
 
 #### execute()
-Executes callbacks based on the parameters received.
-**Parameters**
+Ejecuta los callback en función de los paramentros introducidos.
+**Parameters** (Parámetros)
 ```
 function:   callback to execute
 ```
 
-*Example*
+*Ejemplo*
 ``` javascript
 var myFunc = function(){
     //Do something
@@ -421,15 +423,17 @@ Lungo.Core.execute(myFunc, myFunc2);
 
 
 #### bind()
-Creates a new function that, when called, itself calls this function in the context of the provided this value, with a given sequence of arguments preceding any provided when the new function was called.
-**Parameters**
+Crea una nueva función que cuando se la llama, en sí llama a esta función en el contexto del valor proporcionado, con la secuencia dada de argumentos.
+
+**Parameters** (Parámetros)
 ```
 object:     object that 'this' can refer in the new function.
 function:   A function object.
 ```
-This method **return** the function which will do the action on the object.
 
-*Example*
+Este método devuelve la funcion que realizará la acción sobre el objeto.
+
+*Ejemplo*
 ``` javascript
 var example = "This is ";
 var addText = function(textToAdd){
@@ -446,16 +450,16 @@ var finalText = Lungo.Core.bind(example, addText)(text);
 
 
 #### mix()
-Copy from any number of objects and mix them all into a new object. The implementation is simple; just loop through arguments and copy every property of every object passed to the function.
+Copia cuantos objetos reciba por parámetro y los mezcla todos dentro de un nuevo objetos, la implementación es muy sencilla. simplemente itera sobre los argumentos del objeto y copia cada propiedad de cada objeto recibido por parámetro.
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 object:     arguments to mix them all into a new object.
 object:     arguments to mix them all into a new object.
 ```
-This method **return** an object with the mix done.
+Este método devuelve el objeto con el mix.
 
-*Example*
+*Ejemplo*
 ``` javascript
 var CONFIG_BASE = {
     name: 'lungo_db',
@@ -479,16 +483,16 @@ Result:
 
 
 #### isOwnProperty()
-Every object descended from Object inherits the hasOwnProperty method. This method can be used to determine whether an object has the specified property as a direct property of that object.
+Todos los objetos que descienden de Object heredan el método hasOwnProperty. Este método se usa para determinar si un objeto tiene una propiedad directa específica.
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 object:     object to test for a property's existence inside itself.
 string:     property the name of the property to test.
 ```
-This method **return** boolean indicating if property exists.
+Este método devuelve un boolean indicando si la propiedad existe o no.
 
-*Example*
+*Ejemplo*
 ``` javascript
 var car = {wheels:4,doors:true};
 Lungo.Core.isOwnProperty(car,"wheels"); //Result: true
@@ -497,15 +501,15 @@ Lungo.Core.isOwnProperty(car,"wings");      //Result: false
 
 
 #### toType()
-Determine the internal JavaScript [[Class]] of an object.
+Determina la [[Class]] interna JavaScript de un objeto.
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 object:     object to get the real type of itself.
 ```
-This method **return** a string with the internal JavaScript [[Class]]
+Este método devuelve un string con la [[Class]] interna de JavaScript
 
-*Example*
+*Ejemplo*
 ``` javascript
 var name = "Lungo";
 Lungo.Core.toType(name);    //Result: "string"
@@ -513,15 +517,15 @@ Lungo.Core.toType(name);    //Result: "string"
 
 
 #### toArray()
-Convert an array-like object into a true JavaScript array.
+Transforma un objeto del tipo array en un objeto array de JavaScript.
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 object:     Any object to turn into a native Array.
 ```
-This method **return** the object in a plain array.
+Este método devuelve el objeto convertido en un array plano.
 
-*Example*
+*Ejemplo*
 ``` javascript
 var execute = function() {
     var args = lng.Core.toArray(arguments);
@@ -530,33 +534,35 @@ var execute = function() {
 
 
 #### isMobile()
-Determine if the current environment is a mobile environment. This method **return** An object with the mix done.
-*Example*
+Determina si el entorno en el que se está ejecutando es móvil o no. Este método devuelve un objeto que ha sido mezclado con la función mix.
+
+*Ejemplo*
 ``` javascript
 Lungo.Core.isMobile();
 ```
 
 
 #### environment()
-**Returns** information of execute environment.
-*Example*
+Devuelve la información del entorno en el que se está ejecutando.
+
+*Ejemplo*
 ``` javascript
 Lungo.Core.environment();
 ```
 
 
 #### orderByProperty()
-Orders a number of objects by a given parameter.
+Ordena objetos en función de sus propiedades.
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 list:       List of objects.
 string:     Name of the property.
 string:     Type of order: asc or desc.
 ```
-This method **return** an ordered list of objects by a property.
+Este método devuelve una lista ordenada de objetos ordenada por una propiedad.
 
-*Example*
+*Ejemplo*
 ``` javascript
 var list = [
     {name: 'Lungo', twitter: 'lungojs'},
@@ -566,18 +572,17 @@ var list = [
 var ordered_list = lng.Core.orderByProperty(list, 'name', 'asc');
 ```
 
-
 #### findByProperty()
-Finds a object with an specific property if exists in a list of Objects.
+Busca si existe algún objeto con la propiedad especificada por parámetro.
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 list:       The list with objects.
 string:     Name of the property.
 ```
-This method **return** An instance of the object found, null if not found.
+Este método devuelve una instancia del objeto si se a encontrado null si no.
 
-*Example*
+*Ejemplo*
 ``` javascript
 var list = [
     {name: 'Lungo', twitter: 'lungojs'},
@@ -588,21 +593,21 @@ var user = lng.Core.findByProperty(list, 'name', 'Lungo');
 ```
 
 
-Cache
+Caché
 -----
-Lungo implements its own cache type. This cache will store the value until the webapp is closed
+Lungo implementa su propia caché. Esta caché se encarga de almacenar el valor hasta que la webapp se cierra.
 
 #### set()
-Sets in the LungoJS cache system a new key/value pair.
+Pone en el sistema de caché de Lungo un nuevo par clave/valor.
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 string:     Key for the new value.
 string:     [OPTIONAL] Subkey in LungoJS Cache System.
 object:     Value asigned to the key.
 ```
 
-*Example*
+*Ejemplo*
 ``` javascript
 var framework = {name: "Lungo", twitter: "lungojs"};
 Lungo.Cache.set("lungoFramework", framework);
@@ -610,14 +615,14 @@ Lungo.Cache.set("lungoFramework", framework);
 
 
 #### get()
-Returns the cached value of a given key.
+Devuelve el valor en caché del par clave/valor.
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 string:      Key in LungoJS Cache System.
 string:     [OPTIONAL] Subkey in LungoJS Cache System.
 ```
-This method **return** an object containing the value.
+Este método devuelve un objeto que contiene el valor.
 
 *Example*
 ``` javascript
@@ -627,30 +632,30 @@ var cachedFramework = Lungo.Cache.get("lungoFramework");
 
 
 #### remove()
-Removes the instance of a given key in LungoJs Cache System.
+Borra la instancia de un determinado par clave/valor alojado en la caché de Lungo.
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 string:     Key in LungoJS Cache System.
 string:     [OPTIONAL] Subkey in LungoJS Cache System.
 ```
 
-*Example*
+*Ejemplo*
 ``` javascript
 Lungo.Cache.remove("lungoFramework");
 ```
 
 
 #### exists()
-Checks if the given key is stored in the cache.
+Comprueba si un determinado par especificado por la clave se encuentra guardado en la caché de Lungo.
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 string Key in LungoJS Cache System.
 ```
-This method **return** a boolean value which is true if the key is found
+Este método devuelve un boolean, true si existe false en caso contrario.
 
-*Example*
+*Ejemplo*
 ``` javascript
 Lungo.Cache.exists("lungoFramework");
 ```
@@ -658,13 +663,12 @@ Lungo.Cache.exists("lungoFramework");
 
 DOM
 ---
-Lungo uses the famous library [QuoJS](http://quojs.tapquo.com) to handle the DOM of your application. QuoJS is a micro, modular, Object-Oriented and concise JavaScript Library that simplifies HTML document traversing, event handling, and Ajax interactions for rapid mobile web development. It allows you to write powerful, flexible and cross-browser code with its elegant, well documented, and micro coherent API.
+Lungo utiliza la famosa libreria [QuoJS](http://quojs.tapquo.com) para manejar el DOM de tu aplicación. Quo es una micro librería JavaScript modular y orientada a objectos que simplifica la gestión del documento HTML,la gestión de eventos y las interacciones con Ajax para el desarrolo agil de nuestras aplicaciones móviles. Te permite escribir código flexible y util para todos los navegadores.
 
+### Manipulación del DOM
+Utilizando QuoJS, puedes encadenar varias funciones en una misma línea. Para mas información de la API de [Quo](http://quojs.tapquo.com).
 
-### Manipulation
-Using QuoJs, you can chain functions to execute several commands in one row. For more info about [Quo's](http://quojs.tapquo.com) API please go here.
-
-*Example*
+*Ejemplo*
 ``` html
 <section id="main"">
     <header data-title="Dom Manipulation"></header>
@@ -688,9 +692,10 @@ Lungo.dom('#main-article li').tap(function(event) {
 ```
 
 
-### Triggers
-When sections or articles are switched an event is launched. The target section/article will launch an `load` event and the current section/article will launch the `unload` one. We can bind to this events using QuoJs.
-*Example*
+### Triggers (Disparadores)
+Cuando las secciones o artículos se cambian se lanza un evento. El section/article destino lanzará un evento `load` y la section/article origen lanzará un evento `unload`. Podemos vincular ambos eventos usando QuoJS.
+
+*Ejemplo*
 ``` html
 <section id="section1">
     <article id="article1">
@@ -716,15 +721,15 @@ Lungo.dom('#section2').on('load', function(event){
 --------
 
 ### .Carousel
-Lungo has a carousel element where content can be published and the user can navigate through it using the caroussel controls.
+Lungo dispone de un elemento carousel donde publicar el contenido y el usuario navegar con el mediante los controles del carousel.
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 string:     Element query selector.
 function:   Function to execute when switching slide.
 ```
 
-*Example*
+*Ejemplo*
 ``` html
 <section id="carousel" data-transition="slide">
     <header>
@@ -751,24 +756,24 @@ var example = Lungo.Element.Carousel(el, function(index, element) {
 ```
 
 #### Carousel.prev()
-Show the previous slide.
-*Example*
+Muestra la slide anterior.
+*Ejemplo*
 ``` javascript
 var example = Lungo.Element.Carousel(el);
 Lungo.dom('[data-direction=left]').tap(example.prev);
 ```
 
 #### Carousel.next()
-Show the next slide.
-*Example*
+Muesta la slide siguiente.
+*Ejemplo*
 ``` javascript
 var example = Lungo.Element.Carousel(el);
 Lungo.dom('[data-direction=left]').tap(example.next);
 ```
 
 #### Carousel.position()
-Returns the actual index.
-*Example*
+Devuelve el índice de la slide actual.
+*Ejemplo*
 ``` javascript
 var example = Lungo.Element.Carousel(el);
 example.next();
@@ -777,26 +782,27 @@ alert(example.position());
 
 
 ### .count
-As it has been shown in the prototyping chapter, you can add a counter to elements using the data-count attribute. You can also add this counter using javascript.
+Como mencionamos previamente en la parte de prototipado, puedes añadir un contador a los elementos usanto el atributo data-count. También puedes añadir este contador mediante JavaScript
 
-#### JavaScript method
-Set a counter to the element:
+#### Método JavaScript
+Establece un contador al elemento:
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 string:     Element query selector.
 number:     Value of the counter.
 ```
 
-*Example*
+*Ejemplo*
 ``` javascript
 Lungo.Element.count("#messages", 5);
 ```
 
 
-#### HTML method
-You can define via HTML a default value for a count element.
-*Example*
+#### método HTML
+Puedes definir mediante HTML un valor por defecto para el elemento contador.
+
+*Ejemplo*
 ``` html
 <section>
     …
@@ -812,16 +818,16 @@ You can define via HTML a default value for a count element.
 
 
 ### .loading
-As it has been shown in the prototyping chapter, you can create a loading animation using the data-loading attribute. You can also add this animation using javascript:
+También puedes crear un elemento loading para representar los momentos en los que estas realizando la carga de datos utilizando el atributo data-loading. Otra manera de mostrar la animación de carga es utilizando JavaScript.
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 string:     Element query selector.
 string:     [OPTIONAL] Stylesheet.
 ```
-This method **returns** an instance of the object founded.
+Este método devuelve una instance del objeto.
 
-*Example*
+*Ejemplo*
 ``` html
 <section id="main" data-transition="">
     <header data-title="loading"></header>
@@ -834,16 +840,16 @@ Lungo.Element.loading("#main-article", 1);
 
 
 ### .progress
-As it has been shown in the prototyping chapter, you can create a progress bar using the data-progress attribute. You can also add this bar using javascript.
+También es posible crear una barra de progreso utilizando el atributo data-progress. Otra manera de mostrar la animación de carga es utilizando JavaScript.
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 string:     Element query selector.
 number:     The percentage value.
 boolean:    Boolean to show the percentage label.
 ```
 
-*Example*
+*Ejemplo*
 ``` html
 <section id="main" data-transition="">
     <article id="main-article" class="active list indented scroll">
@@ -863,15 +869,15 @@ Lungo.Element.progress("#prg-example", 65, true);
 
 
 ### .Pull
-As it has been shown in the prototyping chapter, you can create a pull and refresh element addind data-pull and some javascript code.
+Para crear un elemento pull and refresh añade el atributo data-pull o hazlo mediante JavaScript.
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 string:     Element query selector.
 object:     Object with the configuration.
 ```
 
-*Example*
+*Ejemplo*
 ``` html
 <section id="main" data-pull="normal">
     <header data-title="Pull & Refresh"></header>
@@ -902,44 +908,45 @@ var pull_example = new Lungo.Element.Pull('#main-article', {
 
 
 ###.Menu
-Manages visual behavior `<data-control-menu>`
+Para el comportamiento visual `<data-control-menu>`
 
 #### Show
-Displays the <data-control-menu> with a determinate Id
+Muestra un <data-control-menu> con un determinado Id
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 string:     <data-control-menu> Id
 ```
 
-*Example*
+*Ejemplo*
 ``` javascript
 Lungo.Element.menu.show("options")
 ```
 
 
 #### Hide
-Hides the <data-control-menu> with a determinate Id
+Esconde el <data-control-menu> con un Id específico
 
-**Parameters**
+**Parameters** (Parámetros)
+
 ```
 string:     <data-control-menu> Id
 ```
 
-*Example*
+*Ejemplo*
 ``` javascript
 Lungo.Element.menu.hide("options")
 ```
 
 #### Toggle
-Toggles the <data-control-menu> with a determinate Id
+Muestra o esconde el <data-control-menu> con id específico
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 string:     <data-control-menu> Id
 ```
 
-*Example*
+*Ejemplo* 
 ``` javascript
 Lungo.Element.menu.toggle("options")
 ```
@@ -947,21 +954,20 @@ Lungo.Element.menu.toggle("options")
 
 .Notification
 -------------
-To display notifications, many times people tend to use the javascript alert() function. The notification it shows looks different depending on the browser. Lungo has a notification system that shows pretty and responsive notifications styled in the same way in all the browsers, making your app look the same no matter the browser you use.
+Para mostrar notificaciones mucha gente utiliza el alert() de JavaScript. Pero así cada notificación depende del navegador donde se visualize. Lungo tiene su propio sistema de notificaciones para que se vean igual en todos los navegadores y además de manera responsive.
 
 #### show()
-Shows a customized notification.
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 string:     The icon, null for no icon.
 string:     Notification's title.
 number:     Seconds to show the notification, 0 for unlimited.
 function:   A function to execute when hiding the notification.
 ```
-If you call to the show function without parameters it will show a loading screen
+Si llamas a la función show() sin parametros simplemente se mostrará una animación de carga.
 
-*Example*
+*Ejemplo*
 ``` javascript
 var afterNotification = function(){
     //Do something
@@ -978,17 +984,17 @@ Lungo.Notification.show();
 
 
 #### hide()
-Hides the current notification.
-*Example*
+Oculta la notificación que se esté mostrando en ese momento.
+*Ejemplo*
 ``` javascript
 Lungo.Notification.hide();
 ```
 
 
 #### success()
-Shows success notification.
+Muestra una notificación para indicar al usuario que la operación en cuestión se realizó con éxito.
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 string:     Notification's title.
 string:     Notification's description.
@@ -997,7 +1003,7 @@ number:     The time to show the notification, 0 for unlimited.
 function:   A function to execute when hiding the notification.
 ```
 
-*Example*
+*Ejemplo*
 ``` javascript
 var afterNotification = function(){
     //Do something
@@ -1013,9 +1019,9 @@ Lungo.Notification.success(
 
 
 #### error()
-Shows an error notification.
+Muestra una notificación de error.
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 string:     Notification's title.
 string:     Notification's description.
@@ -1024,7 +1030,7 @@ number:     The time to show the notification, 0 for unlimited.
 function:   A function to execute when hiding the notification.
 ```
 
-*Example*
+*Ejemplo*
 ``` javascript
 var afterNotification = function(){
     //Do something
@@ -1040,14 +1046,14 @@ Lungo.Notification.error(
 
 
 #### confirm()
-Shows a confirmation notification.
+Muestra una notificación para que el usuario confirme alguna acción.
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 object:     An object with the notification's config.
 ```
 
-*Example*
+*Ejemplo*
 ``` javascript
 Lungo.Notification.confirm({
     icon: 'user',
@@ -1068,9 +1074,9 @@ Lungo.Notification.confirm({
 
 
 #### html()
-Creates a notification using your own html code.
+Crea una notificación utilizando tu propio código html.
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 string:     The html code for the notification.
 string:     The closing button text.
@@ -1078,23 +1084,23 @@ string:     Specific style for notification
 number:     The time to show the notification, 0 for unlimited.
 ```
 
-*Example*
+*Ejemplo*
 ``` javascript
 Lungo.Notification.html('<h1>Hello World</h1>', "Close");
 ```
 
 
 #### push()
-Creates a non-obstructive notification
+Muestra una notificación no obstruccione la interfaz.
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 string:		Notification's title.
 string:		The icon, null for no icon.
 string:		Specific style for notification
 ```
 
-*Example*
+*Ejemplo*
 ``` javascript
 Lungo.Notification.html('<h1>Hello World</h1>', "Close");
 ```
@@ -1103,89 +1109,89 @@ Lungo.Notification.html('<h1>Hello World</h1>', "Close");
 
 .Router
 -------
-Lungo.Router provides the user with the neccesary functions to manage the navigation through javascript. The following functions allow developers to work with the navigation through sections, articles and also asides.
-
+Lungo.Router otorga al usuario las funciones necesarias para manejar la navegación de la aplicación mediante JavaScript. Las siguientes funciones permiten a los desarrolladores trabajar con la navegación entre secciones, artículos y asides.
 
 #### section()
-This function allows the navigation from a section to another one. It is done to navigate forward to a section, if you want to go back to a previous one you have to use the back function which will be explained later.
+Esta función navega desde una sección a otra. Se utiliza para navegar hacia delante entre secciones. Si quieres navegar hacia detrás podras utilizar la función back que se explica mas adelante.
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 string:     The section's id.
 ```
 
-*Example*
+*Ejemplo*
 ``` javascript
 Lungo.Router.section("features");
 ```
 
 #### article()
-Displays the `<article>` in a particular `<section>`.
+Muestra un `<article>` de una `<section>` en particular.
 
-**Parameters**
+**Parameters** (Parámetros)
 ```json
 string:		The section id
 string:     The article's id.
 ```
 
-*Example*
+*Ejemplo*
 ```javascript
 Lungo.Router.article("my-section", "my-article");
 ```
 
 #### back()
-Lungo uses the bread crumb pattern, so to return to a previous section you have to use the Lungo.Router.back function.
+Si quieres navegar hacia atrás tan solo utiliza la función Lungo.Router.back.
 
-*Example*
+*Ejemplo*
 ``` javascript
 Lungo.Router.back();
 ```
 
 . aside 
 -------
-The `<aside>` element has a different behavior to article and section since its display is combined with them. For that reason Lungo offers specific methods:
+El elemento `<aside>`  se comporta diferente dependiendo de si está en un artículo o en una sección. Por ello Lungo tiene métodos específicos para estos casos:
 
 #### show()
-Display an aside element
+Muestra un elemento aside.
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 string:		<aside> id
 ```
 
-*Example*
+*Ejemplo*
 ``` javascript
 Lungo.Aside.show("my-aside");
 ```
 
 #### hide()
-Hide current aside element
+Oculta el elemento aside actual.
 *Example*
 ``` javascript
 Lungo.Aside.hide();
 ```
 
 ####  toggle()
-Toggle an aside element
+Muestra o oculta el elemento aside actual.
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 string:		<aside> id
 ```
 
-*Example*
+*Ejemplo*
 ``` javascript
 Lungo.Aside.toggle("my-aside")
 ```
 
 .Article
 --------
-Since version 2.2 (Brownie) Lungo has a new namespace to control `<article>` element.
+Desde la versión 2.2 (Brownie) Lungo tiene un namespace reservado para e control
+del elemento `<article>`.
 
 ####  clean()
-Clean the content of a particular article with a specific markup
+Limpia el contenido de un artículo específico.
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 string:		<article> ID
 string:		Icon
@@ -1194,20 +1200,20 @@ string:		Description [OPTIONAL]
 string:		Button label [OPTIONAL]
 ```
 
-*Example*
+*Ejemplo*
 ``` javascript
 Lungo.Article.clean("my-article", "user", "Title", "Description", "Refresh")
 ```
 
 .Service
 --------
-Lungo can also make ajax requests to web services.
+Lungo tambien puede realizar peticiones ajax a servicios web.
 
 
 #### Settings
-Object containing the ajax configuration.
+Objeto que contiene la configuración para realizar llamadas ajax.
 
-*Example*
+*Ejemplo*
 ``` javascript
 Lungo.Service.Settings.async = true;
 Lungo.Service.Settings.error = function(type, xhr){
@@ -1220,9 +1226,9 @@ Lungo.Service.Settings.timeout = 10;
 
 
 #### get()
-Load data from the server using a HTTP GET request.
+Carga los datos de un server utilizando la llamada GET de HTTP.
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 string:     The URL to which the request is sent.
 object:     A map or string to to the server.
@@ -1230,7 +1236,7 @@ function:   [OPTIONAL] Callback function. (Asynchronous)
 string:     [OPTIONAL] Mime-Type: json, xml, html, or text.
 ```
 
-*Example*
+*Ejemplo*
 ``` javascript
 var url = "http://localhost:8080/myService";
 var data = {id: 25, length: 50};
@@ -1244,9 +1250,9 @@ var result = Lungo.Service.get(url, "id=25&len=50", null, "json");
 
 
 #### post()
-Load data from the server using a HTTP POST request.
+Envia los datos a un server utilizando la llamada POST de HTTP.
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 string:     The URL to which the request is sent.
 object:     A map or string to send to the server.
@@ -1254,7 +1260,7 @@ function:   [OPTIONAL] Callback function. (Asynchronous)
 string:     [OPTIONAL] Mime-Type: json, xml, html, or text.
 ```
 
-*Example*
+*Ejemplo*
 ``` javascript
 var url = "http://localhost:8080/myService";
 var data = {id: 25, length: 50};
@@ -1268,16 +1274,16 @@ var result = Lungo.Service.post(url, "id=25&len=50", null, "json");
 
 
 #### json()
-Load data from the server using a HTTP GET request and mime-type JSON.
+Carga los datos de un server utilizando la llamada GET de HTTP y el mime-tyme JSON.
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 string:     The URL to which the request is sent.
 object:     A map or string to send to the server.
 function:   [OPTIONAL] Callback function. (Asynchronous)
 ```
 
-*Example*
+*Ejemplo*
 ``` javascript
 var url = "http://localhost:8080/myService";
 var data = {id: 25, length: 50};
@@ -1291,9 +1297,9 @@ var result = Lungo.Service.json(url, "id=25&len=50");
 
 
 #### cache()
-Auto-caching system with date pattern for HTTP GET requests.
+Sistema de auto-cache con patron fecha para peticiones GET de HTTP.
 
-**Parameters**
+**Parameters** (Parámetros)
 ```
 string:     The URL to which the request is sent.
 object:     A map or string to send to the server.
@@ -1302,7 +1308,7 @@ function:   [OPTIONAL] Callback function. (Asynchronous)
 string:     [OPTIONAL] Mime-Type: json, xml, html, or text.
 ```
 
-*Example*
+*Ejemplo*
 ``` javascript
 var url = "http://localhost:8080/myService";
 var data = {id: 25, length: 50};
@@ -1312,7 +1318,7 @@ var parseResponse = function(result){
 
 Lungo.Service.cache(url, data, "2 hours", parseResponse, "json");
 
-//Another example
+//Otro ejemplo
 var result = Lungo.Service.cache(
     url,
     "id=25&len=50",
